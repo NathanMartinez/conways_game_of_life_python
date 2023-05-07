@@ -61,13 +61,7 @@ git clone https://github.com/NathanMartinez/conways_game_of_life_python
 ```shell
 pip install pygame numpy
 ```
-- Mac:
-
-```shell
-pip3 install pygame numpy
-```
-
-- Linux:
+- Mac and Linux:
 
 ```shell
 pip3 install pygame numpy
@@ -80,13 +74,7 @@ pip3 install pygame numpy
 ```shell
 python main.py
 ```
-- Mac:
-
-```shell
-python3 main.py
-```
-
-- Linux:
+- Mac and Linux:
 
 ```shell
 python3 main.py
