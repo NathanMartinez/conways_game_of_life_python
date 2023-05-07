@@ -51,7 +51,7 @@ To run this implementation of Conway's Game of Life, follow these steps:
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/NathanMartinez/repository.git
+git clone https://github.com/NathanMartinez/conways_game_of_life_python
 ```
 
 2. Install the dependencies. This implementation requires pygame and numpy. You can install them using pip:
