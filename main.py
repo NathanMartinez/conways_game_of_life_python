@@ -77,15 +77,16 @@ class Game:
         while self.running:
             self.handle_events()
             
-            if self.paused:
-                self.screen.blit(self.pause_text, self.pause_text_rect)
-            else:
+            self.screen.fill(pg.Color(BACKGROUND_COLOR))
+            
+            if not self.paused:
                 self.board.update()
 
-            self.screen.fill(pg.Color(BACKGROUND_COLOR))
-
             self.board.display()
-
+            
+            if self.paused:
+                self.screen.blit(self.pause_text, self.pause_text_rect)
+            
             fps_text = self.font.render("FPS: {}".format(self.fps), True, FONT_COLOR)
             self.screen.blit(fps_text, (10, 10))
 
