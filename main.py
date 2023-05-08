@@ -21,12 +21,15 @@ class Game:
         self.max_fps = 60
         pg.display.set_caption("Conway's Game of Life")
         
+    def quit_game(self):
+        self.running = False
+        pg.quit()
+        sys.exit()
+        
     def handle_events(self):
         for event in pg.event.get():
             if event.type == pg.QUIT:
-                self.running = False
-                pg.quit()
-                sys.exit()
+                self.quit_game()
 
             elif event.type == pg.MOUSEBUTTONDOWN and event.button == 1:
                 self.board.check_clicks(event)

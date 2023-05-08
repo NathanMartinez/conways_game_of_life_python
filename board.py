@@ -23,7 +23,7 @@ class Board:
             (self.cols // 2 + 1, self.rows // 2 + 1),
         )[: self.cols, : self.rows]
         self.cells = checker_board
-       
+    
     def display(self):
         cell_width = (SCREEN_WIDTH - (self.cols + 1) * CELL_BORDER) // self.cols
         cell_height = (SCREEN_HEIGHT - (self.rows + 1) * CELL_BORDER) // self.rows

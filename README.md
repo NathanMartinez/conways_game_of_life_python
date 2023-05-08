@@ -82,8 +82,9 @@ python3 main.py
 
 ## Controls
 
+- Enable left-click functionality to toggle cells between the dead and alive states using the mouse.
 - Use the left and right arrow keys to decrease or increase the frames per second (FPS) respectively.
 - Press the spacebar to pause or resume the game.
-- Press 'r' to generate a random board.
-- Press 'c' to generate a checkerboard pattern.
-- Press 'e' to generate an empty board.
+- Press 'R' to generate a random board.
+- Press 'C' to generate a checkerboard pattern.
+- Press 'E' to generate an empty board.
