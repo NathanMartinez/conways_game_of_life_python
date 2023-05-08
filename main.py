@@ -31,8 +31,13 @@ class Game:
             if event.type == pg.QUIT:
                 self.quit_game()
 
-            elif event.type == pg.MOUSEBUTTONDOWN and event.button == 1:
-                self.board.check_clicks(event)
+            elif event.type == pg.MOUSEBUTTONDOWN:
+                if event.button == 1:
+                    self.board.check_clicks(event)
+
+            elif event.type == pg.MOUSEMOTION:
+                if event.buttons[0]:  # Left mouse button down
+                    self.board.check_clicks(event)
 
             elif event.type == pg.KEYDOWN:
                 self.handle_keydown_event(event)
