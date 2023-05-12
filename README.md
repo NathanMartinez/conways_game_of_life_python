@@ -54,36 +54,28 @@ To run this implementation of Conway's Game of Life, follow these steps:
 git clone https://github.com/NathanMartinez/conways_game_of_life_python
 ```
 
-2. Install the dependencies. This implementation requires pygame and numpy. You can install them using pip:
-
-- Windows:
+2. Navigate to the project directory:
 
 ```shell
-pip install pygame numpy
+cd conways_game_of_life_python
 ```
-- Mac and Linux:
+
+3. Install the dependencies using pip:
 
 ```shell
-pip3 install pygame numpy
+pip install -r requirements.txt
 ```
 
-3. Run the game:
-
-- Windows:
+4. Run the game:
 
 ```shell
 python main.py
-```
-- Mac and Linux:
-
-```shell
-python3 main.py
 ```
 
 ## Controls
 
 - Enable left-click functionality to toggle cells between the dead and alive states using the mouse.
-- Use the left and right arrow keys to decrease or increase the frames per second (FPS) respectively.
+- Use the left and right arrow keys to decrease or increase the frames per second (FPS), respectively.
 - Press the spacebar to pause or resume the game.
 - Press 'R' to generate a random board.
 - Press 'C' to generate a checkerboard pattern.
