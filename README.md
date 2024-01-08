@@ -60,16 +60,29 @@ git clone https://github.com/NathanMartinez/conways_game_of_life_python
 cd conways_game_of_life_python
 ```
 
-3. Install the dependencies using pip:
+3. Start a python virtual environment:
 
 ```shell
-pip install -r requirements.txt
+python3 -m venv venv
 ```
 
-4. Run the game:
+4. Activate the virtual environment:
 
 ```shell
-python main.py
+source venv/bin/activate
+```
+
+5. Install the dependencies using pip:
+
+```shell
+pip3 install -r requirements.txt
+```
+
+
+6. Run the game:
+
+```shell
+python3 main.py
 ```
 
 ## Controls
